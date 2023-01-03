@@ -102,6 +102,9 @@ error_detect_depends() {
     exit 1
   fi
 }
+# Pre-installation settings
+pre_install_docker_compose() {
+
 #web
 read -p "Nhập domain web(ko cần https://) :" api_host
   [ -z "${api_host}" ] && api_host="0"
